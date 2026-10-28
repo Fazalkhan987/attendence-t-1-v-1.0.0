@@ -1,0 +1,78 @@
+face_attendance
+├── config
+│   └── default.yaml
+├── data
+│   ├── faceattend.db
+│   ├── faceattend.db-shm
+│   └── faceattend.db-wal
+├── logs
+│   └── faceattend.log
+├── pyproject.toml
+├── README.md
+├── requirements-dev.txt
+├── requirements.txt
+├── src
+│   ├── faceattend
+│   │   ├── camera
+│   │   │   ├── enroll_capture.py
+│   │   │   ├── __init__.py
+│   │   │   ├── live.py
+│   │   │   ├── overlay.py
+│   │   │   ├── tracker.py
+│   │   │   └── webcam.py
+│   │   ├── cli.py
+│   │   ├── config.py
+│   │   ├── detection
+│   │   │   ├── base.py
+│   │   │   ├── __init__.py
+│   │   │   └── scrfd.py
+│   │   ├── evaluation
+│   │   │   ├── dataset.py
+│   │   │   ├── __init__.py
+│   │   │   ├── metrics.py
+│   │   │   ├── report.py
+│   │   │   └── runner.py
+│   │   ├── exceptions.py
+│   │   ├── image_utils.py
+│   │   ├── __init__.py
+│   │   ├── liveness
+│   │   │   ├── base.py
+│   │   │   └── __init__.py
+│   │   ├── logging_setup.py
+│   │   ├── __main__.py
+│   │   ├── quality.py
+│   │   ├── recognition
+│   │   │   ├── arcface.py
+│   │   │   ├── base.py
+│   │   │   ├── __init__.py
+│   │   │   └── matcher.py
+│   │   ├── schemas.py
+│   │   ├── security.py
+│   │   ├── services
+│   │   │   ├── engine.py
+│   │   │   ├── __init__.py
+│   │   │   ├── persons.py
+│   │   │   ├── recognition.py
+│   │   │   └── registration.py
+│   │   ├── storage
+│   │   │   ├── database.py
+│   │   │   └── __init__.py
+│   │   └── validation.py
+│   └── faceattend.egg-info
+│       ├── dependency_links.txt
+│       ├── entry_points.txt
+│       ├── PKG-INFO
+│       ├── requires.txt
+│       ├── SOURCES.txt
+│       └── top_level.txt
+└── tests
+    ├── conftest.py
+    ├── test_database.py
+    ├── test_integration_models.py
+    ├── test_matcher.py
+    ├── test_metrics_and_config.py
+    ├── test_quality.py
+    ├── test_recognition_and_tracker.py
+    └── test_registration.py
+
+15 directories, 61 files
